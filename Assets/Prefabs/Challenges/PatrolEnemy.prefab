@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1482885675224647281}
-  - component: {fileID: 2801370013446386806}
+  - component: {fileID: 3315639103526046245}
+  - component: {fileID: 8493554412120810046}
   m_Layer: 0
   m_Name: VisionCollider
   m_TagString: Untagged
@@ -26,13 +27,26 @@ Transform:
   m_GameObject: {fileID: 149697527493136820}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.763, z: 0}
+  m_LocalScale: {x: 1.13, y: 0.21, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7093029797390744676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2801370013446386806
+--- !u!114 &3315639103526046245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149697527493136820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb0c93971153fb04a9304253d00fc288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VisionDetect
+  playerInView: 0
+--- !u!61 &8493554412120810046
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,10 +77,10 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 4.3210945, y: 0.33410215}
+  m_Offset: {x: 2.1447392, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +90,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.589037, y: 0.17111397}
+  m_Size: {x: 4.105007, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &2033271586488548164
 GameObject:
@@ -103,7 +117,7 @@ Transform:
   m_GameObject: {fileID: 2033271586488548164}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7600002, y: -1.8, z: 0}
+  m_LocalPosition: {x: 0.39999998, y: -1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -135,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 3668388021938535275}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7016647, w: 0.7125073}
-  m_LocalPosition: {x: 0.5600002, y: 0, z: 0}
+  m_LocalPosition: {x: 0.336, y: 0.498, z: 0}
   m_LocalScale: {x: 1.0000665, y: 1.9997339, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -218,7 +232,7 @@ Transform:
   m_GameObject: {fileID: 4226763051972099610}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.82, y: -0.038, z: 0}
+  m_LocalPosition: {x: 0.454, y: 0.507, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -238,6 +252,7 @@ GameObject:
   - component: {fileID: 4924280053987211861}
   - component: {fileID: 4150017770903164211}
   - component: {fileID: 8523741758559121119}
+  - component: {fileID: 6838232986777021378}
   m_Layer: 0
   m_Name: PatrolEnemy
   m_TagString: Untagged
@@ -313,15 +328,15 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 3789186099393064884, guid: 045a9450bf4ac49268a8baa133f6ae04, type: 3}
+  m_Sprite: {fileID: 6348512616062833505, guid: 045a9450bf4ac49268a8baa133f6ae04, type: 3}
   m_Color: {r: 0, g: 1, b: 0.85213137, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4375, y: 0.9375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &6183261571597029922
 MonoBehaviour:
@@ -358,7 +373,6 @@ MonoBehaviour:
   _detectionTime: 0
   _attackCooldown: 0
   _attackRate: 10
-  canAttack: 0
 --- !u!50 &4150017770903164211
 Rigidbody2D:
   serializedVersion: 5
@@ -405,7 +419,7 @@ MonoBehaviour:
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
+  m_AlphaCutoff: 0.154
   m_ApplyToSortingLayers: 00000000
   m_ShapePath:
   - {x: -0.8509836, y: -0.55810887, z: 0}
@@ -416,7 +430,7 @@ MonoBehaviour:
   m_InstanceId: 0
   m_ShadowShape2DComponent: {fileID: 118248061611187321}
   m_ShadowShape2DProvider:
-    rid: 3160269809138532423
+    rid: 3160269809138532647
   m_ShadowCastingSource: 2
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
@@ -436,6 +450,28 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 3160269809138532423
+    - rid: 3160269809138532647
       type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
+--- !u!95 &6838232986777021378
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8577975858868235772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4009cc73b1b4ad94d8b3bdcf73482c9c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

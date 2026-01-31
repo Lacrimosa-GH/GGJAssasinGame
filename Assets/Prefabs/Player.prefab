@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 6279268572418872916}
   - component: {fileID: 6892049620734134463}
   - component: {fileID: 4531297485755328816}
+  - component: {fileID: 5963871867358111411}
   - component: {fileID: 5049885922769242288}
   - component: {fileID: 2797432490261402312}
   - component: {fileID: 7719131777980969358}
@@ -226,12 +227,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6347229667219505694, guid: 41c820edb62484ab695237649994f89b, type: 3}
+  m_Sprite: {fileID: 4175454776912177186, guid: 41c820edb62484ab695237649994f89b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.5625, y: 0.625}
+  m_Size: {x: 0.5625, y: 0.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -249,7 +250,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::input
   Move: 5
-  InteractPressed: 1
+  InteractPressed: 0
+--- !u!114 &5963871867358111411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6524638283929649254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d930c14c31c7cd94c9bd21bbb168b060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHide
+  HidingSpot:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &5049885922769242288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +306,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -312,7 +328,7 @@ Animator:
   m_GameObject: {fileID: 6524638283929649254}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 8582029345866548417, guid: 41c820edb62484ab695237649994f89b, type: 3}
+  m_Controller: {fileID: 9100000, guid: bffd6b1fb4e1f454a9aaaa7e98870924, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -396,8 +412,8 @@ MonoBehaviour:
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: -0.03125, y: 0.3125, z: 0}
-      m_Extent: {x: 0.26124573, y: 0.29249573, z: 0}
+      m_Center: {x: -0.03125, y: 0.4375, z: 0}
+      m_Extent: {x: 0.26124573, y: 0.41749573, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0.02
     m_FlipX: 0
