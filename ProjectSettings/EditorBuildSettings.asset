@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a83dde2dc0a4529418a2dcf7a66aa0cc
   - enabled: 0
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/DevScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/LoseScene.unity
