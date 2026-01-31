@@ -326,17 +326,17 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6348512616062833505, guid: 045a9450bf4ac49268a8baa133f6ae04, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.85213137, a: 1}
+  m_Sprite: {fileID: -204908793534025865, guid: 045a9450bf4ac49268a8baa133f6ae04, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.4375, y: 0.9375}
+  m_Size: {x: 0.375, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!114 &6183261571597029922
 MonoBehaviour:
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.ShadowCaster2D
   m_ShadowGroup: 0
-  m_Priority: 0
+  m_Priority: 3
   m_ComponentVersion: 5
   m_HasRenderer: 1
   m_UseRendererSilhouette: 1
@@ -463,7 +463,7 @@ Animator:
   m_GameObject: {fileID: 8577975858868235772}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4009cc73b1b4ad94d8b3bdcf73482c9c, type: 2}
+  m_Controller: {fileID: 1881357407118892938, guid: 045a9450bf4ac49268a8baa133f6ae04, type: 3}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

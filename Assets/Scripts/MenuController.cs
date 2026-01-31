@@ -6,7 +6,7 @@ public class MenuController : MonoBehaviour
    
     public void Play()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("HospitalLevel");
     }
 
     public void mainMenu()
