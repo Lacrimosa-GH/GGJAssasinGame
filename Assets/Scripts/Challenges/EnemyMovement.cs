@@ -35,7 +35,7 @@ public class EnemyMovement : MonoBehaviour
     private bool DetectTurnPoint()
     {
         return Physics2D.OverlapCircle(TurnPointCheck.position, 0.1f, TurnPointMask);
-    }
+    } 
 
     private void OnDrawGizmos()
     {

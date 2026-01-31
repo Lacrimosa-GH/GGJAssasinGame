@@ -11,12 +11,13 @@ public class EnemyDetection : MonoBehaviour
     [SerializeField] private float _detectionTime;
     [SerializeField] private float _attackCooldown;
     [SerializeField] private float _attackRate;
-    public bool canAttack;
 
+    private Animator _animator;
 
     private void Start()
     {
         _visionDetect = GetComponentInChildren<VisionDetect>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -35,7 +36,11 @@ public class EnemyDetection : MonoBehaviour
             var projectileClone = Instantiate(_projectilePrefab, 
                 _projectileSpawnPoint.position, Quaternion.identity);
             Destroy(projectileClone, 5f);
-            //Move spawned porjectile
+            // animation
+            
+           
+            
+            //Move spawned projectile
             projectileClone.TryGetComponent(out Rigidbody2D rb);
            rb.linearVelocityX = _projectileSpeed * transform.localScale.x;
             // increases the cooldown to match the time.time.

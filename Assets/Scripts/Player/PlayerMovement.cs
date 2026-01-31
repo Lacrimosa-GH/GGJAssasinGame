@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
     private input _input;
+    private bool crouched = false;
     [SerializeField] private float _moveSpeed;
     void Start()
     {
@@ -27,13 +28,21 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-1f, 1f, 1f); // facing left
         }
         
-        _animator.Play("Walk");
-        
     }
 
     private void Update()
     {
-        
-        
+        if (_rigidbody2D.linearVelocityX != 0)
+        {
+            _animator.SetTrigger("Walk");
+        }
+        else if (crouched)
+        {
+            _animator.SetTrigger("Crouch");
+        }
+        else
+        {
+            _animator.SetTrigger("Idle");
+        }
     }
 }
