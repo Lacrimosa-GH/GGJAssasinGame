@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         _rigidbody2D.linearVelocityX = _input.Move * _moveSpeed;
+        _animator.Play("Walk");
     }
 
     private void Update()
