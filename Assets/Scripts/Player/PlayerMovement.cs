@@ -18,11 +18,22 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         _rigidbody2D.linearVelocityX = _input.Move * _moveSpeed;
+        if (_input.Move > 0)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f); // facing right
+        }
+        else if (_input.Move < 0)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f); // facing left
+        }
+        
         _animator.Play("Walk");
+        
     }
 
     private void Update()
     {
-            
+        
+        
     }
 }
