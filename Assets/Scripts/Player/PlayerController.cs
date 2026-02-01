@@ -9,6 +9,9 @@ public class PlayerController
     private Animator _animator;
     private input _input;
 
+    public float acceleration = 5.0f; // high number is slower acceleration
+    public float deceleration = 2.0f; // low number is faster deceleration
+
     [SerializeField] private float _moveSpeed;
     void Start()
     {
@@ -20,8 +23,12 @@ public class PlayerController
     
     private void FixedUpdate()
     {
-        Debug.Log(_input.Move);
-        _rigidbody2D.linearVelocityX = _input.Move * _moveSpeed;
+        // Debug.Log(_input.Move);
+        float accelerator = deceleration;
+        if (Math.Abs(_input.Move) > 0) {
+            accelerator = acceleration;
+        }
+        _rigidbody2D.linearVelocityX += ((_input.Move * _moveSpeed) - _rigidbody2D.linearVelocityX) / accelerator;
         
         if (_input.Move > 0)
         {
