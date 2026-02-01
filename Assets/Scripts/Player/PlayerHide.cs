@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using FMODUnity;
+using FMOD.Studio;
 
 public class PlayerHide : MonoBehaviour
 {
@@ -21,11 +23,13 @@ public class PlayerHide : MonoBehaviour
       if (UpdateHide())
       {
          Crouch();
+         RuntimeManager.StudioSystem.setParameterByName("Sneak", 1);
       }
 
       if (!UpdateHide())
       {
          Stand();
+         RuntimeManager.StudioSystem.setParameterByName("Sneak", 0);
       }
       
    }

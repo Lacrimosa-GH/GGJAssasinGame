@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 6730203811432052908}
   - component: {fileID: 7193500012292554757}
   - component: {fileID: 1304364844768818269}
+  - component: {fileID: 31031697042554510}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -461,3 +462,15 @@ MonoBehaviour:
     - rid: 3160269809138532422
       type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
+--- !u!114 &31031697042554510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6524638283929649254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8205482569b37349b4ea5fc7701eb5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FMODWalking
