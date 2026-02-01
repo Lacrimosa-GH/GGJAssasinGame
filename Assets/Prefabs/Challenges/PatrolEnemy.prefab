@@ -80,7 +80,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.1447392, y: 0}
+  m_Offset: {x: 1.8420421, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -90,7 +90,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.105007, y: 1}
+  m_Size: {x: 3.2699811, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &2033271586488548164
 GameObject:
@@ -369,10 +369,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDetection
   _projectilePrefab: {fileID: 8038034169215061602, guid: b52da194891279846ba49966e716bfdb, type: 3}
   _projectileSpawnPoint: {fileID: 457322255348616935}
-  _projectileSpeed: 5
+  _projectileSpeed: 15
   _detectionTime: 0
-  _attackCooldown: 0
-  _attackRate: 10
+  attackCooldown: 0
+  _attackRate: 2
 --- !u!50 &4150017770903164211
 Rigidbody2D:
   serializedVersion: 5
@@ -463,7 +463,7 @@ Animator:
   m_GameObject: {fileID: 8577975858868235772}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 1881357407118892938, guid: 045a9450bf4ac49268a8baa133f6ae04, type: 3}
+  m_Controller: {fileID: 9100000, guid: ac2ff931318904046ae030a6ad573c9a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
