@@ -45,9 +45,10 @@ public class EnemyMovement : MonoBehaviour
 
     private void UpdateAnimation()
     {
+        var originalSpeed = moveSpeed;
+        
         if (_visionDetect.playerInView)
         {
-            var originalSpeed = moveSpeed;
             moveSpeed = 0;
         }
         else if (!_visionDetect.playerInView && moveSpeed == 0)
@@ -58,7 +59,7 @@ public class EnemyMovement : MonoBehaviour
         {
             _animator.Play("Walk");
         }
-        else if (_enemyDetection.attackCooldown < Time.time) ;
+        else if (_enemyDetection.attackCooldown < Time.time ) moveSpeed = originalSpeed;
     }
 
     private void OnDrawGizmos()

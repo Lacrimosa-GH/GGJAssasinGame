@@ -7,22 +7,22 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: Crouch
-    second: {fileID: 7400000, guid: fa2bda470c6f16b439121ecbf023bf57, type: 2}
+    second: {fileID: 7400000, guid: f930eafa252e84c4982bc080f753f688, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: Idle
-    second: {fileID: 7400000, guid: 78c6f7f28a112c9448abba323c2ab3e1, type: 2}
+    second: {fileID: 7400000, guid: b82cdef143bf16d49b25191e7600fdd6, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: Jog
-    second: {fileID: 7400000, guid: f421acfe5c93bf84389aae9d5d942f49, type: 2}
+    second: {fileID: 7400000, guid: 7c8e9cbb67aa293419ad2d6458bde246, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: Walk
-    second: {fileID: 7400000, guid: 9f81b732a85bae2438112e185d5602b2, type: 2}
+    second: {fileID: 7400000, guid: 1013661ebaa0d08448cfaf76dbcfaa89, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -122,7 +122,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639054779231121037
+  platformSettingsDirtyTick: 639055465157278959
   textureAssetName: 
   singleSpriteImportData:
   - name: 
