@@ -8,6 +8,7 @@ public class PlayerHide : MonoBehaviour
    private Collider2D _collider2D;
    private ShadowCaster2D  _shadowCaster2D;
    private Animator _animator;
+   
 
    private void Start()
    {
@@ -34,18 +35,15 @@ public class PlayerHide : MonoBehaviour
       
       _collider2D.enabled = false;
       _shadowCaster2D.castsShadows = false;
-      //_animator.SetTrigger("Crouch");
-      
-   
    }
    private void Stand()
    {
       
       _collider2D.enabled = true;
       _shadowCaster2D.castsShadows = true;
-   
+      
    }
-   private bool UpdateHide()
+   public bool UpdateHide()
    {
       return Physics2D.OverlapCircle(transform.position, 0.1f, HidingSpot);
    }
