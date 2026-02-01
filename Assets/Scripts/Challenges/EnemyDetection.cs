@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class EnemyDetection : MonoBehaviour
 {
@@ -33,6 +35,7 @@ public class EnemyDetection : MonoBehaviour
         if (attackCooldown <= Time.time)
         {
             _animator.Play("Shoot");
+            RuntimeManager.PlayOneShot("event:/SFX/sfx_gunShot", gameObject.transform.position);
             //Bullet Spawn
             var projectileClone = Instantiate(_projectilePrefab, 
                 _projectileSpawnPoint.position, Quaternion.identity);
